@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Northview Legal is a boutique legal practice in Lagos, Nigeria, delivering bespoke entity incorporation, corporate advisory, regulatory compliance, intellectual property, and property services.">
+<meta name="keywords" content="law firm Nigeria, business registration Lagos, CAC registration, company incorporation Nigeria, legal services Lagos, trademark registration Nigeria">
+<meta property="og:title" content="Northview Legal — Boutique Legal Practice, Lagos Nigeria">
+<meta property="og:description" content="Entity incorporation, corporate advisory, regulatory compliance, intellectual property, and property services for Nigerian businesses.">
+<meta property="og:type" content="website">
+<title>Northview Legal — Boutique Legal Practice, Lagos Nigeria</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  :root{
+    --t:#1D9E75;--td:#0F6E56;--tl:#E1F5EE;--tm:#5DCAA5;
+    --ink:#0d0e0c;--ink2:#1a1b18;--ink3:#454640;--ink4:#8a8b86;
+    --cream:#f7f5f0;--sand:#edeae2;--w:#fff;
+    --gold:#c4972a;--goldl:#faf3e0;
+  }
+  html{scroll-behavior:smooth}
+  body{font-family:'Outfit',sans-serif;background:var(--w);color:var(--ink);overflow-x:hidden}
+
+  /* NAV */
+  nav{background:rgba(13,14,12,0.0);position:fixed;top:0;left:0;right:0;z-index:200;padding:0 2.5rem;transition:background 0.4s,border 0.4s;border-bottom:1px solid transparent}
+  nav.scrolled{background:rgba(13,14,12,0.97);border-bottom:1px solid rgba(255,255,255,0.06)}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:72px;max-width:1200px;margin:0 auto}
+  .nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+  .logo-box{width:38px;height:38px;background:var(--t);display:flex;align-items:center;justify-content:center;border-radius:2px;flex-shrink:0}
+  .logo-box span{color:#fff;font-family:'Cormorant Garamond',serif;font-weight:600;font-size:13px;letter-spacing:1px}
+  .logo-name{color:#fff;font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:500;letter-spacing:0.5px}
+  .nav-links{display:flex;align-items:center;gap:2rem}
+  .nav-links a{color:rgba(255,255,255,0.55);font-size:13px;text-decoration:none;font-weight:300;letter-spacing:0.3px;transition:color 0.2s}
+  .nav-links a:hover{color:#fff}
+  .nav-cta{background:var(--t)!important;color:#fff!important;padding:10px 22px;border-radius:2px;font-weight:500!important;letter-spacing:0.3px;transition:background 0.2s!important}
+  .nav-cta:hover{background:var(--td)!important}
+  .nav-mobile-btn{display:none;background:none;border:none;cursor:pointer;padding:8px;color:#fff}
+  .nav-mobile-btn i{font-size:22px}
+  .mobile-menu{display:none;flex-direction:column;background:rgba(13,14,12,0.98);padding:1rem 2rem;gap:0;border-top:1px solid rgba(255,255,255,0.07)}
+  .mobile-menu.open{display:flex}
+  .mobile-menu a{color:rgba(255,255,255,0.7);font-size:15px;text-decoration:none;font-weight:300;padding:0.9rem 0;border-bottom:1px solid rgba(255,255,255,0.06)}
+  .mobile-menu a:last-child{border-bottom:none;color:#fff;font-weight:500}
+
+  /* HERO */
+  .hero{min-height:100vh;position:relative;display:flex;align-items:flex-end;overflow:hidden}
+  .hero-bg{position:absolute;inset:0;background-image:url('https://d8j0ntlcm91z4.cloudfront.net/user_3EiyZyzRZVSCoNCFozG4nXjBUXW/hf_20260605_161502_d9260cb1-f7da-4aff-bad9-0f73a406b3f6.png');background-size:cover;background-position:center top}
+  .hero-mask{position:absolute;inset:0;background:linear-gradient(to top,rgba(13,14,12,1) 0%,rgba(13,14,12,0.75) 40%,rgba(13,14,12,0.3) 100%)}
+  .hero-content{position:relative;z-index:2;padding:0 2.5rem 5.5rem;max-width:800px}
+  .hero-tag{display:flex;align-items:center;gap:10px;margin-bottom:1.75rem}
+  .hero-pulse{width:8px;height:8px;background:var(--t);border-radius:50%;animation:pulse 2s infinite}
+  @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.4;transform:scale(1.15)}}
+  .hero-tag span{font-size:11px;color:var(--tm);letter-spacing:2.5px;text-transform:uppercase;font-weight:500}
+  .hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,5.5vw,5rem);color:#fff;font-weight:400;line-height:1.06;margin-bottom:1.5rem}
+  .hero h1 em{color:var(--tm);font-style:italic}
+  .hero-sub{font-size:15px;color:rgba(255,255,255,0.55);line-height:1.85;max-width:520px;margin-bottom:2.5rem;font-weight:300}
+  .hero-btns{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:2.75rem}
+  .btn-primary{background:var(--t);color:#fff;padding:15px 30px;font-size:14px;font-weight:500;text-decoration:none;display:inline-flex;align-items:center;gap:9px;border-radius:2px;transition:background 0.2s;letter-spacing:0.3px;border:none;cursor:pointer;font-family:'Outfit',sans-serif}
+  .btn-primary:hover{background:var(--td)}
+  .btn-secondary{border:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.75);padding:14px 30px;font-size:14px;font-weight:300;text-decoration:none;display:inline-flex;align-items:center;gap:9px;border-radius:2px;transition:all 0.2s;letter-spacing:0.3px;font-family:'Outfit',sans-serif}
+  .btn-secondary:hover{border-color:rgba(255,255,255,0.5);color:#fff}
+  .hero-stats{display:flex;align-items:center;padding:1.5rem 0 0;border-top:1px solid rgba(255,255,255,0.1)}
+  .hero-stat{text-align:center;padding-right:2rem;margin-right:2rem;border-right:1px solid rgba(255,255,255,0.08)}
+  .hero-stat:last-child{border-right:none;margin-right:0;padding-right:0}
+  .stat-num{font-family:'Cormorant Garamond',serif;font-size:2rem;color:#fff;font-weight:500;line-height:1}
+  .stat-lbl{font-size:11px;color:rgba(255,255,255,0.35);margin-top:3px;font-weight:300;letter-spacing:0.3px}
+
+  /* TRUST BAR */
+  .trust-bar{background:var(--sand);padding:1rem 2.5rem;border-bottom:1px solid rgba(0,0,0,0.06)}
+  .trust-inner{display:flex;align-items:center;justify-content:center;gap:2.5rem;flex-wrap:wrap;max-width:1200px;margin:0 auto}
+  .trust-item{display:flex;align-items:center;gap:7px;font-size:13px;color:var(--ink3);font-weight:400}
+  .trust-item i{font-size:15px;color:var(--td)}
+  .trust-sep{width:1px;height:18px;background:rgba(0,0,0,0.1)}
+
+  /* SECTIONS */
+  .sec{padding:5.5rem 2.5rem}
+  .sec-inner{max-width:1200px;margin:0 auto}
+  .eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:1rem}
+  .ey-line{width:26px;height:1px;background:var(--t)}
+  .ey-text{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--td);font-weight:500}
+
+  /* PROBLEM */
+  .prob-sec{background:var(--cream)}
+  .prob-head{text-align:center;margin-bottom:3rem}
+  .prob-head h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.9rem,3.5vw,2.8rem);font-weight:400;line-height:1.2;margin-bottom:1rem;color:var(--ink)}
+  .prob-head p{font-size:15px;color:var(--ink3);line-height:1.85;font-weight:300;max-width:600px;margin:0 auto}
+  .prob-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+  .prob-card{background:var(--w);border:1px solid rgba(0,0,0,0.07);border-radius:6px;padding:1.75rem;transition:border-color 0.2s}
+  .prob-card:hover{border-color:var(--t)}
+  .prob-icon{width:42px;height:42px;background:var(--goldl);display:flex;align-items:center;justify-content:center;border-radius:3px;margin-bottom:1.1rem}
+  .prob-icon i{font-size:20px;color:var(--gold)}
+  .prob-card h4{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:500;margin-bottom:0.45rem;color:var(--ink)}
+  .prob-card p{font-size:13px;color:var(--ink4);line-height:1.7;font-weight:300}
+
+  /* SERVICES */
+  .svc-sec{background:var(--ink2)}
+  .svc-header{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:end;margin-bottom:3rem}
+  .svc-header h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.9rem,3vw,2.6rem);color:#fff;font-weight:400;line-height:1.2}
+  .svc-header p{font-size:14px;color:rgba(255,255,255,0.45);line-height:1.85;font-weight:300}
+  .svc-header a{display:inline-flex;align-items:center;gap:7px;border:1px solid rgba(29,158,117,0.35);color:var(--tm);font-size:13px;padding:9px 20px;border-radius:2px;text-decoration:none;margin-top:1rem;transition:background 0.2s;font-family:'Outfit',sans-serif}
+  .svc-header a:hover{background:rgba(29,158,117,0.08);color:var(--tm)}
+  .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.07);border-radius:6px;overflow:hidden}
+  .svc-card{background:var(--ink2);padding:2.25rem 1.75rem;transition:background 0.25s}
+  .svc-card:hover{background:rgba(255,255,255,0.03)}
+  .svc-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:1rem}
+  .svc-num{font-family:'Cormorant Garamond',serif;font-size:2.8rem;color:rgba(255,255,255,0.04);font-weight:600;line-height:1}
+  .svc-badge{font-size:10px;color:var(--tm);background:rgba(29,158,117,0.1);border:1px solid rgba(29,158,117,0.2);padding:3px 8px;border-radius:100px;letter-spacing:0.5px;white-space:nowrap}
+  .svc-card h3{font-family:'Cormorant Garamond',serif;font-size:1.15rem;color:#fff;font-weight:500;margin-bottom:0.6rem}
+  .svc-card p{font-size:13px;color:rgba(255,255,255,0.38);line-height:1.7;font-weight:300}
+  .svc-link{display:flex;align-items:center;gap:5px;margin-top:1.25rem;font-size:12px;color:var(--tm);opacity:0;transition:opacity 0.2s}
+  .svc-card:hover .svc-link{opacity:1}
+
+  /* MID CTA */
+  .mid-cta{background:var(--tl);padding:3.5rem 2.5rem;border-top:1px solid rgba(29,158,117,0.15);border-bottom:1px solid rgba(29,158,117,0.15)}
+  .mid-cta-inner{display:flex;justify-content:space-between;align-items:center;gap:2rem;flex-wrap:wrap;max-width:1200px;margin:0 auto}
+  .mid-cta h3{font-family:'Cormorant Garamond',serif;font-size:clamp(1.5rem,3vw,2rem);color:var(--td);font-weight:400}
+  .mid-cta p{font-size:14px;color:var(--td);opacity:0.7;font-weight:300;margin-top:0.2rem}
+
+  /* ABOUT */
+  .about-sec{display:grid;grid-template-columns:1fr 1fr}
+  .about-left{background:var(--cream);padding:5.5rem 3.5rem;display:flex;flex-direction:column;justify-content:center}
+  .about-left h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.9rem,3vw,2.6rem);font-weight:400;line-height:1.2;margin-bottom:1.25rem;color:var(--ink)}
+  .about-left p{font-size:14px;color:var(--ink3);line-height:1.85;font-weight:300;margin-bottom:0.9rem}
+  .about-stats{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1.75rem}
+  .about-stat{background:var(--w);border:1px solid rgba(0,0,0,0.07);border-radius:4px;padding:1.1rem}
+  .about-stat-num{font-family:'Cormorant Garamond',serif;font-size:1.7rem;color:var(--td);font-weight:500;line-height:1}
+  .about-stat-lbl{font-size:11px;color:var(--ink4);margin-top:3px;font-weight:300}
+  .about-right{position:relative;overflow:hidden;min-height:520px}
+  .about-img{position:absolute;inset:0;background-image:url('https://d8j0ntlcm91z4.cloudfront.net/user_3EiyZyzRZVSCoNCFozG4nXjBUXW/hf_20260605_161527_e2bd76e6-7ed6-4f30-b570-6abd9c71f04d.png');background-size:cover;background-position:center}
+  .about-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(13,14,12,0.92) 0%,rgba(13,14,12,0.4) 60%,transparent 100%)}
+  .about-quote{position:absolute;bottom:0;left:0;right:0;z-index:2;padding:2.5rem}
+  .about-quote blockquote{font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:#fff;font-style:italic;line-height:1.45;font-weight:400}
+  .about-quote cite{display:block;font-size:11px;color:rgba(255,255,255,0.4);margin-top:0.6rem;font-style:normal;letter-spacing:1px;text-transform:uppercase;font-weight:400}
+
+  /* VALUES */
+  .vals-sec{background:var(--w);padding:5.5rem 2.5rem}
+  .vals-head{text-align:center;margin-bottom:3rem}
+  .vals-head h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.9rem,3vw,2.6rem);font-weight:400;margin-bottom:0.6rem;color:var(--ink)}
+  .vals-head p{font-size:14px;color:var(--ink4);font-weight:300}
+  .vals-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem}
+  .val-card{background:var(--cream);border-radius:6px;padding:1.75rem;border:1px solid transparent;transition:all 0.25s}
+  .val-card:hover{background:var(--w);border-color:rgba(29,158,117,0.2)}
+  .val-icon{width:40px;height:40px;background:var(--tl);display:flex;align-items:center;justify-content:center;border-radius:3px;margin-bottom:1.1rem}
+  .val-icon i{font-size:19px;color:var(--td)}
+  .val-card h3{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:500;margin-bottom:0.5rem;color:var(--ink)}
+  .val-card p{font-size:13px;color:var(--ink4);line-height:1.7;font-weight:300}
+
+  /* BRAND VISUAL */
+  .brand-sec{position:relative;overflow:hidden;min-height:420px;display:flex;align-items:center}
+  .brand-bg{position:absolute;inset:0;background-image:url('https://d8j0ntlcm91z4.cloudfront.net/user_3EiyZyzRZVSCoNCFozG4nXjBUXW/hf_20260605_161728_9f0be6e6-c6be-436b-984f-9dd5f67c0c63.png');background-size:cover;background-position:center}
+  .brand-mask{position:absolute;inset:0;background:rgba(13,14,12,0.82)}
+  .brand-content{position:relative;z-index:2;padding:4rem 2.5rem;max-width:700px;margin:0 auto;text-align:center}
+  .brand-content h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3.2rem);color:#fff;font-weight:400;line-height:1.15;margin-bottom:1rem}
+  .brand-content p{font-size:15px;color:rgba(255,255,255,0.55);line-height:1.85;font-weight:300;margin-bottom:2rem}
+
+  /* FAQ */
+  .faq-sec{background:var(--ink2);padding:5.5rem 2.5rem}
+  .faq-inner{display:grid;grid-template-columns:1fr 1.1fr;gap:5rem;align-items:start;max-width:1200px;margin:0 auto}
+  .faq-left h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.9rem,3vw,2.6rem);color:#fff;font-weight:400;line-height:1.2;margin-bottom:1rem}
+  .faq-left p{font-size:14px;color:rgba(255,255,255,0.4);line-height:1.85;font-weight:300;margin-bottom:2rem}
+  .faq-list{display:flex;flex-direction:column}
+  .faq-item{border-bottom:1px solid rgba(255,255,255,0.07);cursor:pointer}
+  .faq-item:first-child{border-top:1px solid rgba(255,255,255,0.07)}
+  .faq-q{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1.1rem 0}
+  .faq-q span{font-size:14px;color:#fff;font-weight:400;line-height:1.4}
+  .faq-q i{font-size:17px;color:rgba(255,255,255,0.25);flex-shrink:0;transition:transform 0.2s,color 0.2s}
+  .faq-a{font-size:13px;color:rgba(255,255,255,0.4);line-height:1.75;font-weight:300;padding-bottom:1rem;display:none}
+  .faq-item.open .faq-a{display:block}
+  .faq-item.open .faq-q i{transform:rotate(45deg);color:var(--tm)}
+  .faq-right{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:6px;padding:2.25rem;display:flex;flex-direction:column;gap:1.25rem}
+  .faq-right-title{font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:#fff;font-weight:400}
+  .faq-right-sub{font-size:13px;color:rgba(255,255,255,0.35);font-weight:300;margin-top:-0.5rem;margin-bottom:0.25rem}
+  .why-item{display:flex;gap:10px;align-items:flex-start}
+  .why-icon{width:34px;height:34px;background:rgba(29,158,117,0.12);border:1px solid rgba(29,158,117,0.22);display:flex;align-items:center;justify-content:center;border-radius:3px;flex-shrink:0}
+  .why-icon i{font-size:17px;color:var(--tm)}
+  .why-item h4{font-size:13px;color:#fff;font-weight:500;margin-bottom:2px}
+  .why-item p{font-size:12px;color:rgba(255,255,255,0.38);line-height:1.6;font-weight:300}
+
+  /* CONTACT */
+  .contact-sec{background:var(--cream);padding:5.5rem 2.5rem}
+  .contact-inner{display:grid;grid-template-columns:1fr 1.1fr;gap:4rem;max-width:1000px;margin:0 auto}
+  .contact-left h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.9rem,3vw,2.6rem);font-weight:400;line-height:1.2;margin-bottom:1rem;color:var(--ink)}
+  .contact-left p{font-size:14px;color:var(--ink3);line-height:1.85;font-weight:300;margin-bottom:1.75rem}
+  .contact-channels{display:flex;flex-direction:column;gap:0.75rem}
+  .contact-ch{display:flex;align-items:center;gap:12px;padding:0.9rem 1.1rem;background:var(--w);border:1px solid rgba(0,0,0,0.07);border-radius:4px;text-decoration:none;transition:border-color 0.2s;color:inherit}
+  .contact-ch:hover{border-color:var(--t)}
+  .ch-icon{width:36px;height:36px;background:var(--tl);display:flex;align-items:center;justify-content:center;border-radius:3px;flex-shrink:0}
+  .ch-icon i{font-size:17px;color:var(--td)}
+  .ch-label{font-size:11px;color:var(--ink4);font-weight:300}
+  .ch-value{font-size:14px;color:var(--ink);font-weight:400}
+  .contact-form{background:var(--ink2);border-radius:6px;padding:2.25rem;display:flex;flex-direction:column;gap:1.1rem}
+  .contact-form h3{font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:#fff;font-weight:400}
+  .form-sub-text{font-size:13px;color:rgba(255,255,255,0.35);font-weight:300}
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:0.9rem}
+  .form-field{display:flex;flex-direction:column;gap:4px}
+  .form-field.full{grid-column:1/-1}
+  .form-field label{font-size:10px;color:rgba(255,255,255,0.35);letter-spacing:0.5px;font-weight:400;text-transform:uppercase}
+  .form-field input,
+  .form-field select,
+  .form-field textarea{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.09);color:#fff;padding:10px 13px;font-size:13px;font-family:'Outfit',sans-serif;border-radius:2px;outline:none;transition:border-color 0.2s;-webkit-appearance:none;width:100%}
+  .form-field input::placeholder,
+  .form-field textarea::placeholder{color:rgba(255,255,255,0.25)}
+  .form-field input:focus,
+  .form-field select:focus,
+  .form-field textarea:focus{border-color:var(--t)}
+  .form-field textarea{resize:none;height:80px;line-height:1.6}
+  .form-field select option{background:var(--ink2);color:#fff}
+  .form-submit{background:var(--t);color:#fff;border:none;padding:14px;font-size:14px;font-weight:500;font-family:'Outfit',sans-serif;cursor:pointer;border-radius:2px;display:flex;align-items:center;justify-content:center;gap:9px;transition:background 0.2s;width:100%;letter-spacing:0.3px}
+  .form-submit:hover{background:var(--td)}
+  .form-submit:disabled{background:var(--td);cursor:default}
+  .form-reassure{font-size:11px;color:rgba(255,255,255,0.22);text-align:center;font-weight:300}
+
+  /* FOOTER */
+  footer{background:var(--ink)}
+  .footer-top{display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:2.5rem;padding:3.5rem 2.5rem 2.5rem;max-width:1200px;margin:0 auto;border-bottom:1px solid rgba(255,255,255,0.05)}
+  .footer-brand p{font-size:13px;color:rgba(255,255,255,0.3);line-height:1.7;max-width:280px;font-weight:300;margin-top:0.9rem}
+  .footer-logo{display:flex;align-items:center;gap:10px}
+  .footer-col h5{font-size:10px;color:rgba(255,255,255,0.35);letter-spacing:2px;text-transform:uppercase;margin-bottom:1.1rem;font-weight:500}
+  .footer-col a{display:block;color:rgba(255,255,255,0.3);font-size:13px;text-decoration:none;margin-bottom:0.6rem;font-weight:300;transition:color 0.2s}
+  .footer-col a:hover{color:rgba(255,255,255,0.75)}
+  .footer-col .fc-item{display:flex;align-items:flex-start;gap:7px;color:rgba(255,255,255,0.3);font-size:13px;margin-bottom:0.6rem;font-weight:300;line-height:1.5}
+  .footer-col .fc-item i{font-size:14px;margin-top:2px;color:rgba(255,255,255,0.15);flex-shrink:0}
+  .footer-bottom{display:flex;justify-content:space-between;align-items:center;padding:1.25rem 2.5rem;max-width:1200px;margin:0 auto}
+  .footer-bottom p{color:rgba(255,255,255,0.2);font-size:12px;font-weight:300}
+  .footer-bottom-links{display:flex;gap:1.25rem}
+  .footer-bottom-links a{color:rgba(255,255,255,0.2);font-size:12px;text-decoration:none;font-weight:300;transition:color 0.2s}
+  .footer-bottom-links a:hover{color:rgba(255,255,255,0.55)}
+
+  /* RESPONSIVE */
+  @media(max-width:960px){
+    .svc-header{grid-template-columns:1fr}
+    .vals-grid{grid-template-columns:1fr 1fr}
+    .footer-top{grid-template-columns:1fr 1fr}
+    .faq-inner{grid-template-columns:1fr}
+  }
+  @media(max-width:768px){
+    .hero h1{font-size:2.6rem}
+    .hero-content{padding:0 1.5rem 4rem}
+    .hero-btns{flex-direction:column;align-items:flex-start}
+    .hero-stats{flex-wrap:wrap;gap:1rem}
+    .hero-stat{border-right:none;padding-right:0;margin-right:0;border-bottom:1px solid rgba(255,255,255,0.08);padding-bottom:1rem;width:calc(50% - 0.5rem)}
+    .hero-stat:last-child{border-bottom:none}
+    .trust-inner{gap:1.25rem;justify-content:flex-start}
+    .trust-sep{display:none}
+    .sec{padding:3.5rem 1.5rem}
+    .prob-grid{grid-template-columns:1fr}
+    .svc-grid{grid-template-columns:1fr}
+    .about-sec{grid-template-columns:1fr}
+    .about-right{min-height:320px}
+    .about-left{padding:3rem 1.5rem}
+    .vals-grid{grid-template-columns:1fr 1fr}
+    .contact-inner{grid-template-columns:1fr}
+    .footer-top{grid-template-columns:1fr}
+    .footer-bottom{flex-direction:column;gap:0.75rem;text-align:center}
+    .mid-cta{padding:2.5rem 1.5rem}
+    .mid-cta-inner{flex-direction:column;align-items:flex-start}
+    .brand-content{padding:3rem 1.5rem}
+    .nav-links a:not(.nav-cta){display:none}
+    .nav-mobile-btn{display:flex}
+    nav{padding:0 1.5rem}
+  }
+  @media(max-width:480px){
+    .vals-grid{grid-template-columns:1fr}
+    .form-row{grid-template-columns:1fr}
+    .trust-bar{padding:1rem}
+  }
+</style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav id="main-nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <div class="logo-box"><span>NVL</span></div>
+      <span class="logo-name">Northview Legal</span>
+    </a>
+    <div class="nav-links">
+      <a href="#services">Practice Areas</a>
+      <a href="#about">About</a>
+      <a href="#faq">FAQs</a>
+      <a href="#contact" class="nav-cta">Book Consultation</a>
+    </div>
+    <button class="nav-mobile-btn" id="mobile-toggle" aria-label="Open menu">
+      <i class="ti ti-menu-2"></i>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#services">Practice Areas</a>
+    <a href="#about">About Us</a>
+    <a href="#faq">FAQs</a>
+    <a href="#contact">Book a Free Consultation</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-mask"></div>
+  <div class="hero-content">
+    <div class="hero-tag">
+      <div class="hero-pulse"></div>
+      <span>Boutique Legal Practice &mdash; Lagos, Nigeria</span>
+    </div>
+    <h1>Your business deserves<br>legal counsel that<br><em>actually delivers.</em></h1>
+    <p class="hero-sub">Northview Legal handles entity incorporation, corporate advisory, regulatory compliance, intellectual property, and property transactions with precision, speed, and zero hidden costs.</p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-primary"><i class="ti ti-calendar"></i>Book a Free Consultation</a>
+      <a href="#services" class="btn-secondary"><i class="ti ti-briefcase"></i>Explore Practice Areas</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><div class="stat-num">6+</div><div class="stat-lbl">Practice Areas</div></div>
+      <div class="hero-stat"><div class="stat-num">3&ndash;7</div><div class="stat-lbl">Day Turnaround</div></div>
+      <div class="hero-stat"><div class="stat-num">CAC</div><div class="stat-lbl">Compliant Filings</div></div>
+      <div class="hero-stat"><div class="stat-num">100%</div><div class="stat-lbl">Client Focused</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-inner">
+    <div class="trust-item"><i class="ti ti-shield-check"></i>CAC-Compliant Filings</div>
+    <div class="trust-sep"></div>
+    <div class="trust-item"><i class="ti ti-clock"></i>3 to 7 Day Turnaround</div>
+    <div class="trust-sep"></div>
+    <div class="trust-item"><i class="ti ti-certificate"></i>Qualified Nigerian Law Practitioners</div>
+    <div class="trust-sep"></div>
+    <div class="trust-item"><i class="ti ti-lock"></i>Confidential &amp; Secure</div>
+    <div class="trust-sep"></div>
+    <div class="trust-item"><i class="ti ti-headset"></i>Direct Client Access</div>
+  </div>
+</div>
+
+<!-- PROBLEM SECTION -->
+<section class="sec prob-sec">
+  <div class="sec-inner">
+    <div class="prob-head">
+      <div class="eyebrow" style="justify-content:center"><div class="ey-line"></div><span class="ey-text">Why It Matters</span></div>
+      <h2>Most Nigerian businesses get the legal foundation wrong. We make sure yours does not.</h2>
+      <p>Improper registration, missed filings, and unprotected assets are silent threats that delay funding, block partnerships, and expose founders to liability. Northview Legal removes every one of those risks from day one.</p>
+    </div>
+    <div class="prob-grid">
+      <div class="prob-card">
+        <div class="prob-icon"><i class="ti ti-alert-triangle"></i></div>
+        <h4>Wrong structure, high cost</h4>
+        <p>Choosing the wrong business entity leads to avoidable tax exposure and personal liability. We advise on the right structure before you register.</p>
+      </div>
+      <div class="prob-card">
+        <div class="prob-icon"><i class="ti ti-calendar-off"></i></div>
+        <h4>Missed deadlines and penalties</h4>
+        <p>Annual returns, statutory filings, and renewals are easy to miss. We track and manage all your post-incorporation obligations so you never fall behind.</p>
+      </div>
+      <div class="prob-card">
+        <div class="prob-icon"><i class="ti ti-fingerprint-off"></i></div>
+        <h4>Unprotected brand and IP</h4>
+        <p>Operating without trademark protection leaves your brand open to copying. We secure your IP assets before someone else registers your name first.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="sec svc-sec" id="services">
+  <div class="sec-inner">
+    <div class="svc-header">
+      <div>
+        <div class="eyebrow"><div class="ey-line" style="background:var(--tm)"></div><span class="ey-text" style="color:var(--tm)">What We Do</span></div>
+        <h2>Our Practice Areas</h2>
+      </div>
+      <div>
+        <p>A complete legal suite for every stage of a Nigerian business, from formation through compliance, growth, and asset protection.</p>
+        <a href="#contact"><i class="ti ti-arrow-right"></i>Discuss your specific need</a>
+      </div>
+    </div>
+    <div class="svc-grid">
+      <div class="svc-card">
+        <div class="svc-top"><div class="svc-num">01</div><span class="svc-badge">Most requested</span></div>
+        <h3>Entity Incorporation</h3>
+        <p>Business name and company registration with CAC. Name reservation, statutory filings, post-incorporation changes, and annual returns management.</p>
+        <a href="#contact" class="svc-link"><i class="ti ti-arrow-right"></i>Get started</a>
+      </div>
+      <div class="svc-card">
+        <div class="svc-top"><div class="svc-num">02</div><span class="svc-badge">Advisory</span></div>
+        <h3>Corporate &amp; Commercial Law</h3>
+        <p>Commercial contracts, corporate structuring, shareholders agreements, joint ventures, and business transaction documentation.</p>
+        <a href="#contact" class="svc-link"><i class="ti ti-arrow-right"></i>Get started</a>
+      </div>
+      <div class="svc-card">
+        <div class="svc-top"><div class="svc-num">03</div><span class="svc-badge">Compliance</span></div>
+        <h3>Regulatory Compliance</h3>
+        <p>Licensing, permit acquisition, and ongoing compliance advisory. We liaise directly with CAC, FIRS, and sector-specific regulators on your behalf.</p>
+        <a href="#contact" class="svc-link"><i class="ti ti-arrow-right"></i>Get started</a>
+      </div>
+      <div class="svc-card">
+        <div class="svc-top"><div class="svc-num">04</div><span class="svc-badge">Protection</span></div>
+        <h3>Intellectual Property</h3>
+        <p>Trademark, patent, and copyright registration. We protect your brand and creative output before infringement becomes a costly problem.</p>
+        <a href="#contact" class="svc-link"><i class="ti ti-arrow-right"></i>Get started</a>
+      </div>
+      <div class="svc-card">
+        <div class="svc-top"><div class="svc-num">05</div><span class="svc-badge">Estate</span></div>
+        <h3>Wills &amp; Probate</h3>
+        <p>Drafting of wills, estate planning documentation, and probate administration for individuals and families seeking clarity and protection.</p>
+        <a href="#contact" class="svc-link"><i class="ti ti-arrow-right"></i>Get started</a>
+      </div>
+      <div class="svc-card">
+        <div class="svc-top"><div class="svc-num">06</div><span class="svc-badge">Property</span></div>
+        <h3>Property &amp; Estate Management</h3>
+        <p>Conveyancing, title verification, lease documentation, and property advisory for residential and commercial real estate across Nigeria.</p>
+        <a href="#contact" class="svc-link"><i class="ti ti-arrow-right"></i>Get started</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MID CTA -->
+<div class="mid-cta">
+  <div class="mid-cta-inner">
+    <div>
+      <h3>Not sure which service you need?</h3>
+      <p>Tell us your situation. We will advise at no cost.</p>
+    </div>
+    <a href="#contact" class="btn-primary"><i class="ti ti-message"></i>Talk to a Lawyer Today</a>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about-sec" id="about">
+  <div class="about-left">
+    <div class="eyebrow"><div class="ey-line"></div><span class="ey-text">About the Firm</span></div>
+    <h2>We make legal services simple, fast, and effective.</h2>
+    <p>Northview Legal is a distinct boutique practice built on value creation. We are competent, innovative, solution-oriented legal practitioners who believe the best legal work is clear, direct, and tailored to each client we serve.</p>
+    <p>Whether you are a first-time founder, a scaling business, or a foreign investor entering Nigeria, we provide the legal backbone your enterprise needs to operate and grow with confidence.</p>
+    <div class="about-stats">
+      <div class="about-stat"><div class="about-stat-num">6+</div><div class="about-stat-lbl">Practice areas</div></div>
+      <div class="about-stat"><div class="about-stat-num">3&ndash;7</div><div class="about-stat-lbl">Day turnaround</div></div>
+      <div class="about-stat"><div class="about-stat-num">CAC</div><div class="about-stat-lbl">Compliant filings</div></div>
+      <div class="about-stat"><div class="about-stat-num">100%</div><div class="about-stat-lbl">Client focused</div></div>
+    </div>
+  </div>
+  <div class="about-right">
+    <div class="about-img"></div>
+    <div class="about-overlay"></div>
+    <div class="about-quote">
+      <blockquote>"Creating value in the simplest possible ways."</blockquote>
+      <cite>Northview Legal &mdash; Mission Statement</cite>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="vals-sec">
+  <div class="sec-inner">
+    <div class="vals-head">
+      <div class="eyebrow" style="justify-content:center"><div class="ey-line"></div><span class="ey-text">Our Core Values</span></div>
+      <h2>The principles that govern every engagement</h2>
+      <p>These are not aspirations. They are the operating standards we hold ourselves to with every client, every matter, every time.</p>
+    </div>
+    <div class="vals-grid">
+      <div class="val-card">
+        <div class="val-icon"><i class="ti ti-award"></i></div>
+        <h3>Competence</h3>
+        <p>Deep legal expertise applied precisely. Our clients receive the highest standard of professional service on every matter we handle.</p>
+      </div>
+      <div class="val-card">
+        <div class="val-icon"><i class="ti ti-eye-check"></i></div>
+        <h3>Integrity</h3>
+        <p>Trust and ethical conduct form the foundation of every engagement. Transparent, honest, and professionally accountable, always.</p>
+      </div>
+      <div class="val-card">
+        <div class="val-icon"><i class="ti ti-minimize"></i></div>
+        <h3>Simplicity</h3>
+        <p>We reduce complexity and speak plainly. Our approach is designed to deliver value in the most efficient way possible for each client.</p>
+      </div>
+      <div class="val-card">
+        <div class="val-icon"><i class="ti ti-bulb"></i></div>
+        <h3>Innovation</h3>
+        <p>We apply creative thinking to complex challenges, combining legal rigour with a forward-looking approach to client service.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRAND VISUAL / VISION -->
+<section class="brand-sec">
+  <div class="brand-bg"></div>
+  <div class="brand-mask"></div>
+  <div class="brand-content">
+    <div class="eyebrow" style="justify-content:center"><div class="ey-line" style="background:rgba(255,255,255,0.3)"></div><span class="ey-text" style="color:rgba(255,255,255,0.5)">Our Vision</span></div>
+    <h2>Delivering topnotch legal services in Nigeria.</h2>
+    <p>We measure success by client outcomes. Long-term relationships built on trust and consistent delivery are at the centre of everything we do at Northview Legal.</p>
+    <a href="#contact" class="btn-primary" style="margin:0 auto;display:inline-flex"><i class="ti ti-arrow-right"></i>Start Your Engagement</a>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-sec" id="faq">
+  <div class="faq-inner">
+    <div class="faq-left">
+      <div class="eyebrow"><div class="ey-line" style="background:var(--tm)"></div><span class="ey-text" style="color:var(--tm)">Common Questions</span></div>
+      <h2>Answers to what most clients ask before engaging us</h2>
+      <p>We have handled these questions enough to know exactly what concerns clients most before they reach out. Here are direct answers.</p>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-q"><span>How long does business registration actually take?</span><i class="ti ti-plus"></i></div>
+          <div class="faq-a">Business name registrations are completed in 3 to 5 working days. Company incorporations take 5 to 7 working days. All required documentation must be provided upfront. We keep you updated at every stage of the process.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q"><span>Do I need a lawyer to register my business in Nigeria?</span><i class="ti ti-plus"></i></div>
+          <div class="faq-a">You are not legally required to, but working with experienced practitioners protects you from structural mistakes, ensures full compliance, and provides the right documentation for banking, funding, and contracts from day one.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q"><span>What documents will I need to get started?</span><i class="ti ti-plus"></i></div>
+          <div class="faq-a">Requirements vary by entity type but typically include valid means of identification, a proposed business name, a registered address, and details of the founders or directors. We will provide a precise checklist when you book a consultation.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q"><span>Can foreign nationals incorporate a company in Nigeria?</span><i class="ti ti-plus"></i></div>
+          <div class="faq-a">Yes. Foreign nationals and companies can incorporate in Nigeria under CAMA 2020. We advise on the best structure, assist with CAC registration, and where applicable handle business permit and expatriate quota applications.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q"><span>How are your fees structured?</span><i class="ti ti-plus"></i></div>
+          <div class="faq-a">Our fees are transparent and all-inclusive, covering professional fees, CAC statutory charges, and applicable stamp duties. We discuss pricing clearly at the consultation stage before any engagement begins. There are no hidden costs.</div>
+        </div>
+      </div>
+    </div>
+    <div class="faq-right">
+      <div class="faq-right-title">Why clients choose NVL</div>
+      <div class="faq-right-sub">We resolve the four biggest concerns before you even ask.</div>
+      <div class="why-item">
+        <div class="why-icon"><i class="ti ti-clock"></i></div>
+        <div><h4>Predictable timelines</h4><p>We set realistic deadlines and meet them. No vague estimates. You know exactly where your matter stands at all times.</p></div>
+      </div>
+      <div class="why-item">
+        <div class="why-icon"><i class="ti ti-currency-naira"></i></div>
+        <div><h4>No hidden fees</h4><p>All costs are communicated before engagement. What we quote is what you pay, inclusive of all statutory and professional charges.</p></div>
+      </div>
+      <div class="why-item">
+        <div class="why-icon"><i class="ti ti-phone"></i></div>
+        <div><h4>Direct access to your lawyer</h4><p>You deal with the practitioner handling your matter directly, not a relay of assistants. Clear communication, start to finish.</p></div>
+      </div>
+      <div class="why-item">
+        <div class="why-icon"><i class="ti ti-lock"></i></div>
+        <div><h4>Strict confidentiality</h4><p>Every engagement is governed by professional privilege. Your business information is safe with us.</p></div>
+      </div>
+      <a href="#contact" class="btn-primary" style="width:100%;justify-content:center;margin-top:0.5rem"><i class="ti ti-arrow-right"></i>Start Your Engagement</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-sec" id="contact">
+  <div class="contact-inner">
+    <div class="contact-left">
+      <div class="eyebrow"><div class="ey-line"></div><span class="ey-text">Get in Touch</span></div>
+      <h2>Let us handle the legal. You focus on the business.</h2>
+      <p>Book a free initial consultation. We will review your situation and advise with no pressure, no jargon, and no commitment required to speak with us.</p>
+      <div class="contact-channels">
+        <a class="contact-ch" href="tel:+2348111938206">
+          <div class="ch-icon"><i class="ti ti-phone"></i></div>
+          <div><div class="ch-label">Call or WhatsApp</div><div class="ch-value">+234 811 193 8206</div></div>
+        </a>
+        <a class="contact-ch" href="mailto:akindelebode@gmail.com">
+          <div class="ch-icon"><i class="ti ti-mail"></i></div>
+          <div><div class="ch-label">Email us directly</div><div class="ch-value">akindelebode@gmail.com</div></div>
+        </a>
+        <div class="contact-ch">
+          <div class="ch-icon"><i class="ti ti-map-pin"></i></div>
+          <div><div class="ch-label">Location</div><div class="ch-value">Lagos, Nigeria</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-form">
+      <h3>Book a Free Consultation</h3>
+      <p class="form-sub-text">We respond within one business day.</p>
+      <div class="form-row">
+        <div class="form-field"><label>First name</label><input type="text" placeholder="Your first name"></div>
+        <div class="form-field"><label>Last name</label><input type="text" placeholder="Your last name"></div>
+        <div class="form-field"><label>Email address</label><input type="email" placeholder="your@email.com"></div>
+        <div class="form-field"><label>Phone number</label><input type="tel" placeholder="+234 ..."></div>
+        <div class="form-field full">
+          <label>Service needed</label>
+          <select>
+            <option value="" disabled selected>Select a practice area</option>
+            <option>Entity Incorporation (Business Name)</option>
+            <option>Company Incorporation</option>
+            <option>Corporate &amp; Commercial Advisory</option>
+            <option>Regulatory Compliance</option>
+            <option>Intellectual Property</option>
+            <option>Wills &amp; Probate</option>
+            <option>Property &amp; Estate</option>
+            <option>Not sure &mdash; need guidance</option>
+          </select>
+        </div>
+        <div class="form-field full"><label>Brief description</label><textarea placeholder="Tell us briefly about your situation..."></textarea></div>
+      </div>
+      <button class="form-submit" id="form-submit"><i class="ti ti-send"></i>Send Enquiry &mdash; Free Consultation</button>
+      <p class="form-reassure"><i class="ti ti-lock"></i> Strictly confidential. No spam. We respond within 24 hours.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <div class="logo-box"><span>NVL</span></div>
+        <span class="logo-name">Northview Legal</span>
+      </div>
+      <p>A distinct boutique legal practice delivering bespoke incorporation, corporate advisory, and compliance services for Nigerian businesses and their partners.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Practice Areas</h5>
+      <a href="#services">Entity Incorporation</a>
+      <a href="#services">Corporate &amp; Commercial</a>
+      <a href="#services">Regulatory Compliance</a>
+      <a href="#services">Intellectual Property</a>
+      <a href="#services">Wills &amp; Probate</a>
+      <a href="#services">Property &amp; Estate</a>
+    </div>
+    <div class="footer-col">
+      <h5>Firm</h5>
+      <a href="#about">About Us</a>
+      <a href="#faq">FAQs</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h5>Contact</h5>
+      <div class="fc-item"><i class="ti ti-map-pin"></i><span>Lagos, Nigeria</span></div>
+      <div class="fc-item"><i class="ti ti-phone"></i><span>+234 811 193 8206</span></div>
+      <div class="fc-item"><i class="ti ti-mail"></i><span>akindelebode@gmail.com</span></div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&#169; 2026 Northview Legal. All rights reserved.</p>
+    <div class="footer-bottom-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('main-nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  });
+
+  const mobileToggle = document.getElementById('mobile-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  mobileToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('open');
+    const icon = mobileToggle.querySelector('i');
+    icon.className = mobileMenu.classList.contains('open') ? 'ti ti-x' : 'ti ti-menu-2';
+  });
+  mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      mobileToggle.querySelector('i').className = 'ti ti-menu-2';
+    });
+  });
+
+  document.querySelectorAll('.faq-item').forEach(item => {
+    item.querySelector('.faq-q').addEventListener('click', () => {
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+
+  document.getElementById('form-submit').addEventListener('click', function () {
+    this.innerHTML = '<i class="ti ti-check"></i> Enquiry Sent Successfully';
+    this.style.background = 'var(--td)';
+    this.disabled = true;
+  });
+</script>
+</body>
+</html>
